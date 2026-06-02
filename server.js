@@ -20,3 +20,8 @@ app.post("/messages", (req, res) => {
 app.listen(3000, () => {
     console.log("Server running");
 });
+
+app.delete("/messages", (req, res) => {
+    messages = [];
+    res.json({ success: true });
+});
